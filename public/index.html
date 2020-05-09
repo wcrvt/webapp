@@ -4,10 +4,44 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="icon" href="icon.png">
+    <!-- MathJax.js -->
+    <script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+    <script type="text/javascript" async src="//cdnjs.cloudflare.com/ajax/libs/three.js/99/three.min.js"></script>
+
+    <title> Digital Servo </title>
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta property="og:title" content="Digital  Servo" />
+    <meta property="og:image" content="tw_card.jpg" />
   </head>
   <body>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyB9XtTLSkcBlzOUw23cBWT1Mh5RmgfAFTk",
+        authDomain: "homepage-b0fc4.firebaseapp.com",
+        databaseURL: "https://homepage-b0fc4.firebaseio.com",
+        projectId: "homepage-b0fc4",
+        storageBucket: "homepage-b0fc4.appspot.com",
+        messagingSenderId: "827566944177",
+        appId: "1:827566944177:web:7ea0f5f103b1de5b1e9790",
+        measurementId: "G-SFJEDD2N9B"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
